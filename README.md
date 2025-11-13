@@ -51,7 +51,7 @@ Installation:
 
    3. Compile the game using gcc:
  
-      gcc main.c -lGL -lGLU -lglut -o Vrick_N_Ball
+      gcc main.c -lGL -lGLU -lglut -o Brick_N_Ball
 
    4. Run the game:
 
