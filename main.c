@@ -17,6 +17,7 @@ bool restart=false;
 bool brick[16][16];
 double brick_x[16][16];
 double brick_y[16][16];
+int score=0;
 
 void draw_shapes(double x, double y){
   
@@ -166,6 +167,8 @@ void animate(){
   
   if (ball_x>=x-200 && ball_x<=x && ball_y+dy*ball_speed<=y+5 && ball_y+dy*ball_speed>=y-15){
     dy*=-1;
+    score+=1;
+    printf("%d",score);
   }
     
   glutPostRedisplay();
