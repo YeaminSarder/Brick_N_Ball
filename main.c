@@ -1,4 +1,5 @@
 
+#include <GL/gl.h>
 #include <stdio.h>
 #include <GL/glut.h>
 #include <stdbool.h>
@@ -172,6 +173,7 @@ void animate(){
 
 
 int main(int argc, char ** argv){
+  
 
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_RGBA);
@@ -188,7 +190,7 @@ int main(int argc, char ** argv){
       brick_y[i][j]=800-j*50;
     }
   }
-
+  glClearColor(0,1,0,1);
   glutDisplayFunc(display);
   glutIdleFunc(animate);
   glutSpecialFunc(special_key_listener);
