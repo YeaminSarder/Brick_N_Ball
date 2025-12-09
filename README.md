@@ -58,7 +58,7 @@ Installation:
       ```
       - mac
       ```bash
-      gcc main.c -framework OpenGL -framework GLUT -o Brick_N_Ball
+      gcc main.c -framework OpenGL -framework GLUT -lglut -o Brick_N_Ball
       ```
    4. Run the game:
       ```bash
